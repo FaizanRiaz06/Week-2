@@ -1,0 +1,165 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #000;
+    color: #fff; */
+}
+header {
+    /* position: sticky;
+    top: 0; */
+    background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 63%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    align-items: center;
+}
+nav ul li {
+    margin: 0 20px;
+    color: #fff;
+}
+nav ul li:nth-child(1){
+    font-size: 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: #000;
+}
+.intro, .skills, .experience, .feedback, .query-form, footer {
+    padding: 40px;
+    margin: auto;
+}
+.skills, .experience h2, .feedback h2, .query-form h2{
+    font-size: 34px;
+}
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 30px;
+    height: 700px;
+    align-content: center;
+}
+img{
+    width: 50%;
+    border-radius: 30px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+}
+.skills .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.experience .grid-container, .feedback .grid-container {
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+.experience .grid-container .card, .feedback .grid-container .card{
+    width: 800px;
+    height: 300px;
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 25px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.918);
+    height: 400px;
+    width: 400px;
+    font-size: 22px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #000;
+}
+.card:hover{
+    color: #fff;
+    border: none;
+    background: #000;
+}
+.query-form form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+form input{
+    height: 50px;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 15px;
+    background-color: transparent;
+    color: #000;
+}
+label{
+    font-size: 28px;
+}
+textarea{
+    height: 70px;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 24px;
+    background-color: transparent;
+    color: #000;
+}
+button{
+    height: 100px;
+    border-radius: 25px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.5s;
+    background: transparent;
+}
+button:hover{
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+footer {
+    background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 63%);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 768px){
+    .header{
+        width: 100%;
+        height: auto;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .intro{
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .experience .grid-container .card, .feedback .grid-container .card{
+        height: auto;
+        width: 100%;
+    }
+    .skills .grid-container, .experience .grid-container, .feedback .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+}

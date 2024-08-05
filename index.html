@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li style="letter-spacing: 10px;"><b>FAIZAN RIAZ</b></li>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#query-form">Query</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro" class="intro">
+        <div class="textintro">
+            <h1>Hi! My Name is Faizan Riaz</h1>
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a MERN Stack Developer with a passion for building dynamic and responsive web applications. I
+                specialize in using MongoDB, Express.js, React.js, and Node.js to create seamless user experiences.
+                Explore
+                my portfolio to learn more about my skills, experience, and what my clients have to say about my work.
+            </p>
+        </div>
+        <div class="image" style="padding-left: 20%;"><img src="./assets/mypic.jpeg"></div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Proficient in JavaScript, including ES6+ features, for front-end and back-end development, enabling
+                    the creation of dynamic and interactive web applications.</p>
+            </div>
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Strong knowledge of HTML and CSS for structuring and styling web pages, ensuring responsive design
+                    and cross-browser compatibility.</p>
+            </div>
+            <div class="card">
+                <h3>React.js</h3>
+                <p>Skilled in developing interactive and responsive user interfaces with React.js, using hooks, state
+                    management, and component-based architecture.</p>
+            </div>
+            <div class="card">
+                <h3>Node.js</h3>
+                <p>Expert in server-side development with Node.js, building efficient and scalable applications using
+                    asynchronous programming and event-driven architecture.</p>
+            </div>
+            <div class="card">
+                <h3>MongoDB</h3>
+                <p>Experienced in designing and managing databases with MongoDB, ensuring data consistency, scalability,
+                    and high performance for web applications.</p>
+            </div>
+            <div class="card">
+                <h3>Express.js</h3>
+                <p>Proficient in building server-side logic using Express.js, creating RESTful APIs, and managing
+                    middleware for robust backend development.</p>
+            </div>
+            <div class="card">
+                <h3>RESTful APIs</h3>
+                <p>Experienced in designing and consuming RESTful APIs, enabling seamless communication between
+                    client-side and server-side applications.</p>
+            </div>
+            <div class="card">
+                <h3>Git & GitHub</h3>
+                <p>Proficient in version control using Git and GitHub, managing code repositories, and collaborating
+                    with teams on software development projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Project A</h3>
+                <p>Developed a full-stack web application for e-commerce using the MERN stack. Implemented features such
+                    as user authentication, product management, and payment processing.</p>
+            </div>
+            <div class="card">
+                <h3>Project B</h3>
+                <p>Created a real-time chat application using React and Node.js. Integrated WebSocket for instant
+                    messaging and MongoDB for storing chat history.</p>
+            </div>
+            <div class="card">
+                <h3>Project C</h3>
+                <p>Worked on a team project to build a social media platform with React and Node.js, focusing on the
+                    backend development and API integration.</p>
+            </div>
+            <div class="card">
+                <h3>Project D</h3>
+                <p>Designed and developed a portfolio website using React.js and Express.js, showcasing various projects
+                    and providing a platform for client interaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+        <h2>Customer Feedback</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>John Doe</h3>
+                <p>"The project was delivered on time and exceeded our expectations. The code quality and attention to
+                    detail were outstanding."</p>
+            </div>
+            <div class="card">
+                <h3>Jane Smith</h3>
+                <p>"A highly skilled developer with a great understanding of the MERN stack. The web application was
+                    efficient and user-friendly."</p>
+            </div>
+            <div class="card">
+                <h3>Michael Johnson</h3>
+                <p>"Professional and reliable. The project communication was smooth, and the final product was exactly
+                    what we needed."</p>
+            </div>
+            <div class="card">
+                <h3>Emily Davis</h3>
+                <p>"Delivered a high-quality project with exceptional performance. The collaboration was seamless, and
+                    the results were impressive."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="query-form" class="query-form">
+        <h2>Have a Query?</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Feel Free to Ask" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Faizan Riaz. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
